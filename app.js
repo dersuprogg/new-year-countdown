@@ -19,12 +19,12 @@ function getProcessedTimestamp(timestamp) {
   };
 }
 
-const newYear = new Date("January 1, 2024 00:00:00");
+const newYear = new Date("January 1, 2025 00:00:00");
 
 function renderTime() {
   const timestampDiff = getDiffTime(newYear);
   const { days, hours, minutes, seconds } =
-  getProcessedTimestamp(timestampDiff);
+    getProcessedTimestamp(timestampDiff);
   daysSpan.textContent = days;
   hoursSpan.textContent = hours;
   minutesSpan.textContent = minutes;
